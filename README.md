@@ -43,7 +43,6 @@ Here are some examples of the generated results:
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/safina57/Neural-Style-Transfer.git
-cd Neural_Style_Transfert
 ```
 
 ### **2. Install Dependencies**
