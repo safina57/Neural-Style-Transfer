@@ -6,7 +6,7 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 class NST_Model:
-    def __init__(self, vgg : VGG19, alpha : float = 5e1, beta : float = 2e2, weight : float = 2e-2, imsize : int = 512):
+    def __init__(self, vgg, alpha : float = 5e1, beta : float = 2e2, weight : float = 2e-2, imsize : int = 512):
         self.vgg = vgg
         self.alpha = torch.tensor(alpha)
         self.beta = torch.tensor(beta)
