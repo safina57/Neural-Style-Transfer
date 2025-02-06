@@ -200,7 +200,7 @@ class NST_Model:
                 J_total.backward()
                 return J_total
 
-            if epoch % 50 == 0 or epoch == epochs - 1:
+            if epoch % 10 == 0 or epoch == epochs - 1:
                 with torch.no_grad():
                     generated_features = self.vgg.forward(generated, is_style=False)
                     J_content = self.content_loss(content_features[0], generated_features[0])
